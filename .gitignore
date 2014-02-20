@@ -20,3 +20,9 @@ _cgo_export.*
 _testmain.go
 
 *.exe
+
+#Ignore bin
+bin/
+
+#Ignore github.com packages
+src/github.com
