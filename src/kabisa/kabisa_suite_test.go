@@ -4,10 +4,12 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
+	"github.com/onsi/ginkgo/reporters"
 	"testing"
 )
 
 func TestKabisa(t *testing.T) {
 	RegisterFailHandler(Fail)
-	RunSpecs(t, "Kabisa Suite")
+	junitReporter := reporters.NewJUnitReporter("junit.xml")
+	RunSpecsWithDefaultAndCustomReporters(t, "Kabisa Suite", []Reporter{junitReporter})
 }

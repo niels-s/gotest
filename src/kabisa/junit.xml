@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <testsuite tests="1" failures="0" time="6.9381e-05">
+      <testcase name="Book Books With me should verify something" classname="Kabisa Suite" time="2.358e-05"></testcase>
+  </testsuite>
